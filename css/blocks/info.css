@@ -1,0 +1,222 @@
+
+
+.info {
+	flex: 0 0 18rem;
+	margin-bottom: 3rem;
+}
+
+@media (max-width: 1140px) {
+	.info {
+		display: none;
+	}
+}
+
+.info__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info__content > * + * {
+	margin-top: 2rem;
+}
+
+.info__item {
+	width: 100%;
+	border-radius: 1.5rem;
+	padding: 1.6rem 1.5rem;
+	transition: 0.3s ease;
+	border: 0.125rem solid rgba(150, 148, 148, 0.05);
+} 
+
+.calendar {
+	height: auto;
+	border-radius: 0rem;
+	border-bottom-left-radius: 1.5rem;
+	border-bottom-right-radius: 1.5rem;
+}	
+
+.info__item:hover {
+	-webkit-box-shadow: 0px 16px 25px -3px rgba(135, 138, 141, 0.23);
+	-moz-box-shadow: 0px 16px 25px -3px rgba(135, 138, 141, 0.23);
+	box-shadow: 0px 16px 25px -3px rgba(135, 138, 141, 0.23);
+}
+
+.calendar__month {
+	font-weight: bold;
+}
+
+.calendar__day {
+	font-size: 0.8rem;
+	color: rgb(203, 80, 89);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.calendar__content {
+	margin-top: 1rem;
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(7, 1fr); 
+	grid-gap: 0.6rem;
+}
+
+.calendar__item {
+	padding: 0.3rem 0.1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.7rem;
+	cursor: pointer;
+}
+
+.calendar__item--active {
+	background-color: rgb(254, 218, 116);
+	border-radius: 50%;
+}
+
+.subscribe {
+	padding: 1.2rem 1.5rem;
+	border-radius: 0.8rem;
+	cursor: pointer;
+}
+
+.subscribe__content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.subscribe__icon {
+
+}
+
+.subscribe__title {
+	font-size: 0.95rem;
+	font-weight: bold;
+	color: rgb(203, 80, 89);
+}
+
+.app {
+	cursor: pointer;
+}
+
+.app__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.app__icon {
+	height: 9.375rem;
+	width: 5.1rem;
+}
+
+.app__text {
+	max-width: 8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.app__title {
+	font-weight: bold;
+	font-size: 0.85rem;
+	line-height: 1.4;
+}
+
+.app__subtitle {
+	font-size: 0.8rem;
+	line-height: 1.4;
+	color: rgb(150, 148, 148);
+}
+
+.app__button {
+
+}
+
+.google-play {
+	padding: 0.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid rgba(150, 148, 148, 0.4);
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.google-play__icon {
+
+}
+
+.google-play__content {
+
+}
+
+.google-play__subtitle {
+	font-size: 0.6rem;
+	color: grey;
+	text-transform: uppercase;
+}
+
+.google-play__title {
+	margin-top: auto;
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

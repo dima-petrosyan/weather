@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather</title>
+
+	<!-- Fonts -->
+	<link rel="stylesheet" type="text/css" href="css/fonts/Lato/stylesheet.css">
+
+	<!-- Settings -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+
+	<!-- Blocks -->
+	<link rel="stylesheet" type="text/css" href="css/blocks/header.css">
+	<link rel="stylesheet" type="text/css" href="css/blocks/aside.css">
+	<link rel="stylesheet" type="text/css" href="css/blocks/weather.css">
+	<link rel="stylesheet" type="text/css" href="css/blocks/info.css">
+
+</head>
+<body>
+
+	<header class="header">
+
+		<div class="container">
+			<div class="header__content">
+				
+				<div class="header__label">
+					<h1 class="header__title">Weather Forecast</h1>
+					<h2 class="header__subtitle">Saturday 26, December 2020</h2>
+				</div>
+
+				<div class="header__nav">
+					<div class="header__search search">
+						<div class="search__content">
+							<form class="search__form">
+								<input class="search__input" placeholder="Search" type="text" name="search">
+							</form>
+							<div class="search__image-wrapper">
+								<div class="search__icon icon">
+									<img src="img/search.svg" alt="Search">
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="header__notifications">
+						<div class="header__message icon alarm">
+							<img src="img/message.svg" alt="Message">
+						</div>
+						<div class="header__alarm icon alarm">
+							<img src="img/bell.svg" alt="Alarm">
+						</div>
+					</div>
+					<div class="header__user">
+						<div class="header__user-icon icon">
+							<img src="img/account.svg" alt="Account">
+						</div>
+						<h3 class="header__username">Fahim</h3>
+						<div class="header__user-arrow">
+							<img src="img/arrow.svg" alt="Arrow">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+	
+	<aside class="aside">
+		<div class="aside__content">
+			<div class="aside__logo">
+				<div class="aside__logo-icon icon">
+					<img src="img/logo.png" alt="Logo">
+				</div>
+			</div>
+			<nav class="aside__nav">
+				<div class="aside__menu">
+					<div class="aside__menu-item">
+						<div class="aside__home-icon icon">
+							<img src="img/home.svg" alt="Home">
+						</div>
+					</div>
+					<div class="aside__menu-item">
+						<div class="aside__menu-icon icon">
+							<img src="img/menu.svg" alt="Menu">
+						</div>
+					</div>
+					<div class="aside__menu-item">
+						<div class="aside__settings-icon icon">
+							<img src="img/settings.svg" alt="Settings">
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="aside__bottom">
+				<div class="aside__bottom-icon icon">
+					<img src="img/share.svg" alt="Share">
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<main class="main">
+
+		<div class="main__container container">
+
+			<section class="weather">
+				<div class="weather__container">
+					<div class="weather__content">
+
+						<div class="weather__image-content">
+							<div class="weather__image-label">
+								<h1 class="weather__image-title">Moscow</h1>
+								<h2 class="weather__image-subtitle">Russian Federation</h2>
+								<span class="weather__image-temp">32&deg</span>
+							</div>
+							<img src="img/city.jpeg" alt="City">
+						</div>
+
+						<div class="weather__forecast forecast">
+							
+							<div class="forecast__header">
+								<div class="forecast__label">
+									<h1 class="forecast__today">Today</h1>
+									<h1 class="forecast__week forecast-title--active">Week</h1>
+								</div>
+								<div class="forecast__degrees">
+									<h2 class="forecast__celcius degree-icon degree-icon--active">&degC</h2>
+									<h2 class="forecast__farenheit degree-icon">&degF</h2>
+								</div>
+							</div>
+
+							<div class="forecast__body">
+
+								<div class="forecast__today-content today-forecast">
+									<div class="today-forecast__title">
+										<h1 class="today-forecast__day">Monday</h1>
+										<h2 class="today-forecast__time">21:45</h2>
+									</div>
+									<div class="today-forecast__weather">
+										<h1 class="today-forecast__temp">+22&degC</h1>
+										<div class="today-forecast__icon icon">
+											<img src="img/logo.png" alt="Weather">
+										</div>
+										<div class="today-forecast__info">
+											<h2 class="today-forecast__description">Broken clouds</h2>
+											<div class="today-forecast__feels-like today-forecast-item">
+												<h1 class="today-forecast__feels-like-title">Feels like:</h1>
+												<h1 class="today-forecast__feels-like-definition">21&degC</h1>
+											</div>
+										</div>
+									</div>
+									<div class="today-forecast__details">
+										<div class="today-forecast__wind today-forecast-item">
+											<div class="today-forecast__wind-icon icon">
+												<img src="img/wind.svg" alt="Wind">
+											</div>
+											<h3 class="today-forecast__wind-title">10.3 km/h</h3>
+										</div>
+										<div class="today-forecast__rain today-forecast-item">
+											<div class="today-forecast__rain-icon icon">
+												<img src="img/rain.svg" alt="Rain">
+											</div>
+											<h3 class="today-forecast__rain-title">60%</h3>
+										</div>
+										<div class="today-forecast__pressure today-forecast-item">
+											<div class="today-forecast__pressure-icon icon">
+												<img src="img/pressure.svg" alt="Rain">
+											</div>
+											<h3 class="today-forecast__pressure-title">745 mm.Hg.</h3>
+										</div>
+									</div>
+									<div class="today-forecast__parameters">
+										<div class="today-forecast__max-temp today-forecast-item">
+											<h1 class="today-forecast__max-temp-title">Max. temperature:</h1>
+											<h1 class="today-forecast__max-temp-definition">24&degC</h1>
+										</div>
+										<div class="today-forecast__min-temp today-forecast-item">
+											<h1 class="today-forecast__min-temp-title">Min. temperature:</h1>
+											<h1 class="today-forecast__min-temp-definition">20&degC</h1>
+										</div>
+									</div>
+								</div>
+
+								<div class="forecast__week-content none">
+									<div class="forecast__item item-forecast">
+										<div class="item-forecast__header">
+											<div class="item-forecast__label">
+												<h2 class="item-forecast__title">Saturday</h2>
+												<h3 class="item-forecast__subtitle">Partly Cloudy</h3>
+											</div>
+											<div class="item-forecast__image forecast-image">
+												<img src="img/logo.png" alt="Weather">
+											</div>
+										</div>
+										<div class="item-forecast__body">
+											<div class="item-forecast__details">
+												<div class="item-forecast__wind">
+													<div class="item-forecast__wind-icon forecast-icon">
+														<img src="img/wind.svg" alt="Wind">
+													</div>
+													<h3 class="item-forecast__wind-title">10.3 km/h</h3>
+												</div>
+												<div class="item-forecast__rain">
+													<div class="item-forecast__rain-icon forecast-icon">
+														<img src="img/rain.svg" alt="Rain">
+													</div>
+													<h3 class="item-forecast__rain-title">60%</h3>
+												</div>
+											</div>
+											<h2 class="item-forecast__temp">32&deg</h2>
+										</div>
+									</div>
+									<div class="forecast__item item-forecast">
+										<div class="item-forecast__header">
+											<div class="item-forecast__label">
+												<h2 class="item-forecast__title">Saturday</h2>
+												<h3 class="item-forecast__subtitle">Partly Cloudy</h3>
+											</div>
+											<div class="item-forecast__image forecast-image">
+												<img src="img/logo.png" alt="Weather">
+											</div>
+										</div>
+										<div class="item-forecast__body">
+											<div class="item-forecast__details">
+												<div class="item-forecast__wind">
+													<div class="item-forecast__wind-icon forecast-icon">
+														<img src="img/wind.svg" alt="Wind">
+													</div>
+													<h3 class="item-forecast__wind-title">10.3 km/h</h3>
+												</div>
+												<div class="item-forecast__rain">
+													<div class="item-forecast__rain-icon forecast-icon">
+														<img src="img/rain.svg" alt="Rain">
+													</div>
+													<h3 class="item-forecast__rain-title">60%</h3>
+												</div>
+											</div>
+											<h2 class="item-forecast__temp">32&deg</h2>
+										</div>
+									</div>
+									<div class="forecast__item item-forecast">
+										<div class="item-forecast__header">
+											<div class="item-forecast__label">
+												<h2 class="item-forecast__title">Saturday</h2>
+												<h3 class="item-forecast__subtitle">Partly Cloudy</h3>
+											</div>
+											<div class="item-forecast__image forecast-image">
+												<img src="img/logo.png" alt="Weather">
+											</div>
+										</div>
+										<div class="item-forecast__body">
+											<div class="item-forecast__details">
+												<div class="item-forecast__wind">
+													<div class="item-forecast__wind-icon forecast-icon">
+														<img src="img/wind.svg" alt="Wind">
+													</div>
+													<h3 class="item-forecast__wind-title">10.3 km/h</h3>
+												</div>
+												<div class="item-forecast__rain">
+													<div class="item-forecast__rain-icon forecast-icon">
+														<img src="img/rain.svg" alt="Rain">
+													</div>
+													<h3 class="item-forecast__rain-title">60%</h3>
+												</div>
+											</div>
+											<h2 class="item-forecast__temp">32&deg</h2>
+										</div>
+									</div>
+									<div class="forecast__item item-forecast">
+										<div class="item-forecast__header">
+											<div class="item-forecast__label">
+												<h2 class="item-forecast__title">Saturday</h2>
+												<h3 class="item-forecast__subtitle">Partly Cloudy</h3>
+											</div>
+											<div class="item-forecast__image forecast-image">
+												<img src="img/logo.png" alt="Weather">
+											</div>
+										</div>
+										<div class="item-forecast__body">
+											<div class="item-forecast__details">
+												<div class="item-forecast__wind">
+													<div class="item-forecast__wind-icon forecast-icon">
+														<img src="img/wind.svg" alt="Wind">
+													</div>
+													<h3 class="item-forecast__wind-title">10.3 km/h</h3>
+												</div>
+												<div class="item-forecast__rain">
+													<div class="item-forecast__rain-icon forecast-icon">
+														<img src="img/rain.svg" alt="Rain">
+													</div>
+													<h3 class="item-forecast__rain-title">60%</h3>
+												</div>
+											</div>
+											<h2 class="item-forecast__temp">32&deg</h2>
+										</div>
+									</div>
+									<div class="forecast__item item-forecast">
+										<div class="item-forecast__header">
+											<div class="item-forecast__label">
+												<h2 class="item-forecast__title">Saturday</h2>
+												<h3 class="item-forecast__subtitle">Partly Cloudy</h3>
+											</div>
+											<div class="item-forecast__image forecast-image">
+												<img src="img/logo.png" alt="Weather">
+											</div>
+										</div>
+										<div class="item-forecast__body">
+											<div class="item-forecast__details">
+												<div class="item-forecast__wind">
+													<div class="item-forecast__wind-icon forecast-icon">
+														<img src="img/wind.svg" alt="Wind">
+													</div>
+													<h3 class="item-forecast__wind-title">10.3 km/h</h3>
+												</div>
+												<div class="item-forecast__rain">
+													<div class="item-forecast__rain-icon forecast-icon">
+														<img src="img/rain.svg" alt="Rain">
+													</div>
+													<h3 class="item-forecast__rain-title">60%</h3>
+												</div>
+											</div>
+											<h2 class="item-forecast__temp">32&deg</h2>
+										</div>
+									</div>
+									<div class="forecast__item item-forecast">
+										<div class="item-forecast__header">
+											<div class="item-forecast__label">
+												<h2 class="item-forecast__title">Saturday</h2>
+												<h3 class="item-forecast__subtitle">Partly Cloudy</h3>
+											</div>
+											<div class="item-forecast__image forecast-image">
+												<img src="img/logo.png" alt="Weather">
+											</div>
+										</div>
+										<div class="item-forecast__body">
+											<div class="item-forecast__details">
+												<div class="item-forecast__wind">
+													<div class="item-forecast__wind-icon forecast-icon">
+														<img src="img/wind.svg" alt="Wind">
+													</div>
+													<h3 class="item-forecast__wind-title">10.3 km/h</h3>
+												</div>
+												<div class="item-forecast__rain">
+													<div class="item-forecast__rain-icon forecast-icon">
+														<img src="img/rain.svg" alt="Rain">
+													</div>
+													<h3 class="item-forecast__rain-title">60%</h3>
+												</div>
+											</div>
+											<h2 class="item-forecast__temp">32&deg</h2>
+										</div>
+									</div>
+									<div class="forecast__item item-forecast">
+										<div class="item-forecast__header">
+											<div class="item-forecast__label">
+												<h2 class="item-forecast__title">Saturday</h2>
+												<h3 class="item-forecast__subtitle">Partly Cloudy</h3>
+											</div>
+											<div class="item-forecast__image forecast-image">
+												<img src="img/logo.png" alt="Weather">
+											</div>
+										</div>
+										<div class="item-forecast__body">
+											<div class="item-forecast__details">
+												<div class="item-forecast__wind">
+													<div class="item-forecast__wind-icon forecast-icon">
+														<img src="img/wind.svg" alt="Wind">
+													</div>
+													<h3 class="item-forecast__wind-title">10.3 km/h</h3>
+												</div>
+												<div class="item-forecast__rain">
+													<div class="item-forecast__rain-icon forecast-icon">
+														<img src="img/rain.svg" alt="Rain">
+													</div>
+													<h3 class="item-forecast__rain-title">60%</h3>
+												</div>
+											</div>
+											<h2 class="item-forecast__temp">32&deg</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="forecast__footer footer">
+								<h1 class="footer__title">Today's Highlight</h1>
+								<div class="footer__content">
+
+									<div class="footer__item sunrise">
+										<h2 class="footer__item-title">Sunrise & Sunset</h2>
+										<div class="footer__item-image sunrise__image">
+											<img src="img/sun.svg" alt="Sun">
+										</div>
+										<div class="sunrise__content">
+											<div class="sunrise__item">
+												<div class="sunrise__icon">
+													<img src="img/up.svg" alt="Up">
+												</div>
+												<div class="sunrise__info">
+													<h2 class="sunrise__time sunrise__time--sunrise">5:50 AM</h2>
+													<h2 class="sunrise__details">+ lm 20s</h2>
+												</div>
+											</div>
+											<div class="sunrise__item">
+												<div class="sunrise__icon">
+													<img src="img/down.svg" alt="Down">
+												</div>
+												<div class="sunrise__info">
+													<h2 class="sunrise__time sunrise__time--sunset">5:25 PM</h2>
+													<h2 class="sunrise__details">+ lm 20s</h2>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="footer__item graph">
+										<h2 class="footer__item-title">Temperature Graph</h2>
+										<div class="footer__item-image graph__image">
+											<img src="img/temp.svg" alt="Temperature">
+										</div>
+										<div class="graph__content">
+											<div class="graph__canvas">
+												
+												<div class="graph__border_1"></div>
+												<div class="graph__border_2"></div>
+
+												<div class="point"></div>
+												<div class="line"></div>
+												<div class="point"></div>
+												<div class="line"></div>
+												<div class="point"></div>
+												<div class="line"></div>
+												<div class="point"></div>
+												<div class="line"></div>
+												<div class="point"></div>
+												<div class="line"></div>
+												<div class="point"></div>
+												<div class="line"></div>
+												<div class="point"></div>	
+
+											</div>
+											<div class="graph__days">
+												<span class="graph__day">Sun</span>
+												<span class="graph__day">Mon</span>
+												<span class="graph__day">Tue</span>
+												<span class="graph__day">Wed</span>
+												<span class="graph__day">Thu</span>
+												<span class="graph__day">Fri</span>
+												<span class="graph__day">Sat</span>
+											</div>
+											
+										</div>
+									</div>
+
+									<div class="footer__item air">
+										<h2 class="footer__item-title">Air Quality Index</h2>
+										<div class="footer__item-image air__image">
+											<img src="img/air.svg" alt="Air">
+										</div>
+										<div class="air__content">
+											<div class="air__label">
+												<h3 class="air__aqi">US AQI</h3>
+												<h2 class="air__definition">1*</h2>
+											</div>
+											<h2 class="air__title">Dangerous</h2>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+
+						</div>
+
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<section class="info">
+				<div class="info__content">
+					<div class="info__item calendar">
+						<h2 class="calendar__month">December</h2>
+						<div class="calendar__content">
+							<span class="calendar__day">Sun</span>
+							<span class="calendar__day">Mon</span>
+							<span class="calendar__day">Tue</span>
+							<span class="calendar__day">Wed</span>
+							<span class="calendar__day">Thu</span>
+							<span class="calendar__day">Fri</span>
+							<span class="calendar__day">Sat</span>
+							<span class="calendar__item">1</span>
+							<span class="calendar__item">2</span>
+							<span class="calendar__item">3</span>
+							<span class="calendar__item">4</span>
+							<span class="calendar__item">5</span>
+							<span class="calendar__item">6</span>
+							<span class="calendar__item">7</span>
+							<span class="calendar__item">8</span>
+							<span class="calendar__item">9</span>
+							<span class="calendar__item">10</span>
+							<span class="calendar__item">11</span>
+							<span class="calendar__item">12</span>
+							<span class="calendar__item">13</span>
+							<span class="calendar__item">14</span>
+							<span class="calendar__item">15</span>
+							<span class="calendar__item">16</span>
+							<span class="calendar__item calendar__item--active">17</span>
+							<span class="calendar__item">18</span>
+							<span class="calendar__item">19</span>
+							<span class="calendar__item">20</span>
+							<span class="calendar__item">21</span>
+							<span class="calendar__item">22</span>
+							<span class="calendar__item">23</span>
+							<span class="calendar__item">24</span>
+							<span class="calendar__item">25</span>
+							<span class="calendar__item">26</span>
+							<span class="calendar__item">27</span>
+							<span class="calendar__item">28</span>
+							<span class="calendar__item">29</span>
+							<span class="calendar__item">30</span>
+							<span class="calendar__item">31</span>
+						</div>
+					</div>
+					<div class="info__item subscribe">
+						<div class="subscribe__content">
+							<div class="subscribe__icon icon">
+								<img src="img/letter.svg" alt="Letter">
+							</div>
+							<h2 class="subscribe__title">Subscribe to our newsletter</h2>
+						</div>
+					</div>
+					<div class="info__item app">
+						<div class="app__content">
+							<div class="app__icon icon">
+								<img src="img/app.svg" alt="Application">
+							</div>
+							<div class="app__text">
+								<h2 class="app__title">Get Our weather app on your Devices!</h2>
+								<h3 class="app__subtitle">Get the weather app on your mobile</h3>
+								<div class="app__button google-play">
+									<div class="google-play__icon icon">
+										<img src="img/google-play.svg" alt="Google Play">
+									</div>
+									<div class="google-play__content">
+										<h2 class="google-play__subtitle">Get it on</h2>
+										<h1 class="google-play__title">Google Play</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="info__item add">
+				
+					</div>
+				</div>	
+
+			</section>
+
+		</div>
+	</main>
+
+	<!-- https://dribbble.com/shots/14787532-Weather-Forecast-Dashboard/attachments/6493633?mode=media -->
+	<script type="text/javascript" src="node_modules/moment/min/moment.min.js"></script>
+	<script type="text/javascript" src="js/segment.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

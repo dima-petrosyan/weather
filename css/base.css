@@ -1,0 +1,30 @@
+
+
+body {
+	background-color: #fff;
+	font-family: 'Lato', sans-serif;
+	color: rgb(71, 69, 69);
+}
+
+@media (min-width: 1400px) {
+	body {
+		width: 1400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.container {
+	max-width: 1380px;
+	padding-right: 40px;
+	padding-left: 136px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+
+
